@@ -52,6 +52,7 @@
     &__title {
         font-size: 1.55rem;
         letter-spacing: .35px;
+
     }
 
     &__title-2 {
@@ -72,8 +73,14 @@
             border-bottom: 1px solid #098aed;
             padding-bottom: 1em;
         }
-        
+
     }
+}
+
+.border-b {
+    border-bottom: 1px solid #098aed;
+    padding-bottom: 1em;
+   
 }
 
 .f-reverse {
