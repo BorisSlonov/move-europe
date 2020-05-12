@@ -1,19 +1,21 @@
 html,
 body {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
+
 
 @media(max-width:1024px) {
 
     html,
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -29,8 +31,43 @@ body {
     color: #098aed;
 }
 
+.d-none {
+    display: none;
+}
+
+.fb40 {
+    flex-basis: 40%;
+}
+
+.fb60 {
+    flex-basis: 60%;
+}
+
+.fb50 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.align-stretch {
+    align-items: stretch !important;
+}
+
+.ta-left {
+    text-align: left;
+
+}
+
+
+.align-start {
+    align-items: flex-start;
+
+}
+
 .link-hover {
     position: relative;
+
     &::after {
         content: '';
         position: absolute;
@@ -41,9 +78,49 @@ body {
         transform: scale(0);
         transition: all .3s;
     }
+
     &:hover {
         &::after {
             transform: scale(1);
         }
     }
 }
+
+
+.header {
+    height: 100%;
+    min-height: 45vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: .35px;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+//bg
+.usa {
+    background-image: url(../img/usa.jpg);
+}
+
+.europe {
+    background-image: url(../img/header-europe.jpg);
+}
+
+.italy {
+    background-image: url(../img/header-italy.png);
+}
+
+.german {
+    background-image: url(../img/header-german.jpg);
+}
+
+.spain {
+    background-image: url(../img/header-spain.jpg);
+}
+
+//bg

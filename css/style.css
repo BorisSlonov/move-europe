@@ -8,21 +8,30 @@ body,
           box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 html,
 body {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
 }
 
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 @media (max-width: 1024px) {
   html,
   body {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -36,6 +45,51 @@ body {
 
 .text-blue {
   color: #098aed;
+}
+
+.d-none {
+  display: none;
+}
+
+.fb40 {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.fb60 {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.fb50 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.align-stretch {
+  -webkit-box-align: stretch !important;
+      -ms-flex-align: stretch !important;
+          align-items: stretch !important;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .link-hover {
@@ -61,9 +115,23 @@ body {
 }
 
 .header {
-  height: 50vh;
+  height: 100%;
+  min-height: 45vh;
   background-size: cover;
   background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  letter-spacing: .35px;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .usa {
@@ -72,6 +140,18 @@ body {
 
 .europe {
   background-image: url(../img/header-europe.jpg);
+}
+
+.italy {
+  background-image: url(../img/header-italy.png);
+}
+
+.german {
+  background-image: url(../img/header-german.jpg);
+}
+
+.spain {
+  background-image: url(../img/header-spain.jpg);
 }
 
 .service-h1 {
@@ -139,6 +219,28 @@ body {
   letter-spacing: .35px;
 }
 
+.service__title-2 {
+  font-size: 1.3rem;
+  letter-spacing: .45px;
+  line-height: 1.5;
+  padding-top: 0;
+  margin-bottom: 1em;
+}
+
+.service__finder-list {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 0;
+  margin: 0;
+}
+
+.service__finder-list li {
+  margin-top: 1em;
+  border-bottom: 1px solid #098aed;
+  padding-bottom: 1em;
+}
+
 .f-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -162,6 +264,26 @@ body {
   .service__img {
     max-width: 400px;
   }
+}
+
+.cost-table {
+  width: 100%;
+}
+
+.cost-table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #fff;
+}
+
+.cost-table__item {
+  background-color: #098aed;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 5px;
+  margin: 1px;
 }
 
 .service-grid__row {
@@ -198,8 +320,8 @@ body {
 }
 
 .service-grid__img img {
-  width: 100%;
-  max-width: 5em;
+  width: 100px;
+  height: 100px;
 }
 
 .img-times {
@@ -319,8 +441,9 @@ body {
 }
 
 .h2-title {
-  font-size: 1.75rem;
+  font-size: 2rem;
   letter-spacing: .45px;
   line-height: 1.5;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
