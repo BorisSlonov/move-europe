@@ -86,6 +86,12 @@ body {
   text-align: left;
 }
 
+.box-shadow {
+  padding: 0 1em;
+  -webkit-box-shadow: 0 0 10px 2px rgba(204, 204, 204, 0.445);
+          box-shadow: 0 0 10px 2px rgba(204, 204, 204, 0.445);
+}
+
 .align-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -152,6 +158,26 @@ body {
 
 .spain {
   background-image: url(../img/header-spain.jpg);
+}
+
+.animated.delay-0_1s {
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+
+.animated.delay-0_2s {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+
+.animated.delay-0_3s {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+.animated.delay-0_4s {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
 }
 
 .service-h1 {
@@ -233,12 +259,16 @@ body {
       align-self: center;
   padding-left: 0;
   margin: 0;
+  font-size: 1.1rem;
 }
 
 .service__finder-list li {
-  margin-top: 1em;
+  padding-bottom: 1.5em;
   border-bottom: 1px solid #098aed;
-  padding-bottom: 1em;
+}
+
+.service__finder-list li:not(:first-child) {
+  margin-top: 1.5em;
 }
 
 .border-b {
